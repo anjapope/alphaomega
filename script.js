@@ -126,18 +126,3 @@ document.addEventListener('keydown', function(e) {
         }
     }
 });
-
-// Add hover effects for enhanced interactivity
-document.addEventListener('DOMContentLoaded', function() {
-    const trackCards = document.querySelectorAll('.track-card');
-    
-    trackCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-        });
-    });
-});
