@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Ivory Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Ivory Identification & Testing</h1>
+            <p class="subtitle">Choose your path to explore ivory object analysis</p>
+        </header>
+
+        <div id="welcome-screen" class="screen active">
+            <div class="intro">
+                <h2>Welcome to the Exhibit</h2>
+                <p>Discover how we identify, analyze, and understand ivory objects through four interactive tracks:</p>
+            </div>
+            
+            <div class="track-selection">
+                <div class="track-card" data-track="a">
+                    <div class="track-icon">🔬</div>
+                    <h3>Track A: Material Analysis</h3>
+                    <p>Explore scientific methods for identifying ivory</p>
+                    <ul>
+                        <li>Mineral tests</li>
+                        <li>Microscopy</li>
+                        <li>Stable isotopes</li>
+                    </ul>
+                    <button class="track-button" data-track="a">Begin Analysis</button>
+                </div>
+
+                <div class="track-card" data-track="b">
+                    <div class="track-icon">🎹</div>
+                    <h3>Track B: Object Typology</h3>
+                    <p>Learn about different types of ivory objects</p>
+                    <ul>
+                        <li>Piano keys</li>
+                        <li>Combs</li>
+                        <li>Military insignia</li>
+                        <li>Carvings</li>
+                    </ul>
+                    <button class="track-button" data-track="b">Explore Objects</button>
+                </div>
+
+                <div class="track-card" data-track="c">
+                    <div class="track-icon">🗺️</div>
+                    <h3>Track C: Trade History</h3>
+                    <p>Trace the historical trade networks</p>
+                    <ul>
+                        <li>Maps & colonial networks</li>
+                        <li>Oral histories</li>
+                        <li>Shipping logs</li>
+                    </ul>
+                    <button class="track-button" data-track="c">View History</button>
+                </div>
+
+                <div class="track-card" data-track="d">
+                    <div class="track-icon">⚖️</div>
+                    <h3>Track D: Ethics & Law</h3>
+                    <p>Understand the legal and ethical frameworks</p>
+                    <ul>
+                        <li>CITES regulations</li>
+                        <li>Local historical society stewardship</li>
+                        <li>Repatriation questions</li>
+                    </ul>
+                    <button class="track-button" data-track="d">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Track A: Material Analysis -->
+        <div id="track-a" class="screen track-content">
+            <h2>Track A: Material Analysis</h2>
+            <div class="breadcrumb">
+                <button class="back-button">← Back to Tracks</button>
+            </div>
+
+            <div class="steps">
+                <div class="step" data-step="1">
+                    <h3>Step 1: Mineral Tests</h3>
+                    <div class="step-content">
+                        <p>The first step in identifying ivory involves testing its mineral composition. Genuine ivory contains specific mineral signatures that distinguish it from synthetic materials.</p>
+                        <div class="info-box">
+                            <strong>Key Points:</strong>
+                            <ul>
+                                <li>Ivory is composed primarily of dentine and calcium phosphate</li>
+                                <li>Chemical tests can reveal organic vs. inorganic materials</li>
+                                <li>UV light testing shows characteristic fluorescence</li>
+                            </ul>
+                        </div>
+                        <button class="next-step" data-next="2">Next: Microscopy →</button>
+                    </div>
+                </div>
+
+                <div class="step hidden" data-step="2">
+                    <h3>Step 2: Microscopy</h3>
+                    <div class="step-content">
+                        <p>Under microscopic examination, ivory reveals distinctive patterns called Schreger lines - unique crosshatch patterns visible in cross-sections.</p>
+                        <div class="info-box">
+                            <strong>What We Look For:</strong>
+                            <ul>
+                                <li>Schreger lines (angles and patterns)</li>
+                                <li>Growth rings and layers</li>
+                                <li>Cell structure and organization</li>
+                                <li>Surface texture and grain</li>
+                            </ul>
+                        </div>
+                        <button class="prev-step" data-prev="1">← Previous: Mineral Tests</button>
+                        <button class="next-step" data-next="3">Next: Stable Isotopes →</button>
+                    </div>
+                </div>
+
+                <div class="step hidden" data-step="3">
+                    <h3>Step 3: Stable Isotopes</h3>
+                    <div class="step-content">
+                        <p>Stable isotope analysis provides crucial information about the geographic origin and age of ivory specimens.</p>
+                        <div class="info-box">
+                            <strong>Analysis Methods:</strong>
+                            <ul>
+                                <li>Carbon-14 dating for age determination</li>
+                                <li>Strontium isotopes reveal geographic origin</li>
+                                <li>Nitrogen isotopes indicate diet and environment</li>
+                                <li>Can distinguish pre-ban vs. post-ban ivory</li>
+                            </ul>
+                        </div>
+                        <button class="prev-step" data-prev="2">← Previous: Microscopy</button>
+                        <div class="completion-message">
+                            <p>✓ You've completed the Material Analysis track!</p>
+                            <button class="back-button">Explore Another Track</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Track B: Object Typology -->
+        <div id="track-b" class="screen track-content">
+            <h2>Track B: Object Typology</h2>
+            <div class="breadcrumb">
+                <button class="back-button">← Back to Tracks</button>
+            </div>
+
+            <div class="typology-grid">
+                <div class="object-type">
+                    <h3>Piano Keys</h3>
+                    <div class="object-image">🎹</div>
+                    <p>Historic pianos often featured ivory keys valued for their smooth texture and appearance. Most piano keys were made from African elephant ivory before synthetic alternatives became available.</p>
+                    <div class="details">
+                        <strong>Identification Features:</strong>
+                        <ul>
+                            <li>Thin veneer typically 2-3mm thick</li>
+                            <li>Yellowing with age is natural</li>
+                            <li>Grain patterns visible under magnification</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="object-type">
+                    <h3>Combs</h3>
+                    <div class="object-image">💈</div>
+                    <p>Decorative and functional combs were popular ivory items, prized for their durability and ability to hold intricate carved designs.</p>
+                    <div class="details">
+                        <strong>Identification Features:</strong>
+                        <ul>
+                            <li>Often feature carved decorative patterns</li>
+                            <li>Teeth show wear patterns from use</li>
+                            <li>May include inlaid materials</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="object-type">
+                    <h3>Military Insignia</h3>
+                    <div class="object-image">🎖️</div>
+                    <p>Ivory was used in military insignia, badges, and ceremonial items, particularly in colonial-era military contexts.</p>
+                    <div class="details">
+                        <strong>Identification Features:</strong>
+                        <ul>
+                            <li>Often combined with metals or other materials</li>
+                            <li>May bear engraved symbols or text</li>
+                            <li>Typically smaller, precision-carved pieces</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="object-type">
+                    <h3>Carvings</h3>
+                    <div class="object-image">🗿</div>
+                    <p>Artistic carvings represent some of the most valuable and culturally significant ivory objects, ranging from religious figures to decorative sculptures.</p>
+                    <div class="details">
+                        <strong>Identification Features:</strong>
+                        <ul>
+                            <li>Show natural curvature of tusk</li>
+                            <li>May display cultural or religious motifs</li>
+                            <li>Patina development indicates age</li>
+                            <li>Tool marks reveal carving techniques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="track-footer">
+                <button class="back-button">Explore Another Track</button>
+            </div>
+        </div>
+
+        <!-- Track C: Trade History -->
+        <div id="track-c" class="screen track-content">
+            <h2>Track C: Trade History</h2>
+            <div class="breadcrumb">
+                <button class="back-button">← Back to Tracks</button>
+            </div>
+
+            <div class="history-timeline">
+                <div class="timeline-section">
+                    <h3>Maps & Colonial Networks</h3>
+                    <div class="timeline-content">
+                        <p>The ivory trade followed colonial expansion routes, with major hubs in coastal Africa, Asia, and European ports.</p>
+                        <div class="info-box">
+                            <strong>Key Trade Routes:</strong>
+                            <ul>
+                                <li>East African coast to Asia via Indian Ocean</li>
+                                <li>Central Africa to European colonies</li>
+                                <li>Trans-Saharan routes to Mediterranean</li>
+                                <li>Colonial administrative centers as collection points</li>
+                            </ul>
+                        </div>
+                        <div class="note">
+                            These networks reflect broader patterns of colonial exploitation and resource extraction that had lasting impacts on local communities and ecosystems.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <h3>Oral Histories</h3>
+                    <div class="timeline-content">
+                        <p>Community oral histories provide essential context often missing from written records, revealing the human impact of the ivory trade.</p>
+                        <div class="info-box">
+                            <strong>What Oral Histories Tell Us:</strong>
+                            <ul>
+                                <li>Local knowledge of elephant populations and migration</li>
+                                <li>Community relationships with wildlife</li>
+                                <li>Impact of trade on social structures</li>
+                                <li>Traditional craftsmanship and techniques</li>
+                                <li>Stories of resistance and adaptation</li>
+                            </ul>
+                        </div>
+                        <div class="note">
+                            These narratives are crucial for understanding the full context of ivory objects and their cultural significance.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <h3>Shipping Logs</h3>
+                    <div class="timeline-content">
+                        <p>Historical shipping records document the movement of ivory through official trade channels, providing provenance information.</p>
+                        <div class="info-box">
+                            <strong>What Shipping Logs Reveal:</strong>
+                            <ul>
+                                <li>Quantities and dates of ivory shipments</li>
+                                <li>Origin and destination ports</li>
+                                <li>Trading companies and merchants involved</li>
+                                <li>Market values and economic data</li>
+                                <li>Changes in trade patterns over time</li>
+                            </ul>
+                        </div>
+                        <div class="note">
+                            Cross-referencing shipping logs with other historical documents helps establish provenance and legality of ivory objects.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="track-footer">
+                <button class="back-button">Explore Another Track</button>
+            </div>
+        </div>
+
+        <!-- Track D: Ethics & Law -->
+        <div id="track-d" class="screen track-content">
+            <h2>Track D: Ethics & Law</h2>
+            <div class="breadcrumb">
+                <button class="back-button">← Back to Tracks</button>
+            </div>
+
+            <div class="ethics-sections">
+                <div class="ethics-section">
+                    <h3>CITES Regulations</h3>
+                    <div class="section-icon">📜</div>
+                    <div class="section-content">
+                        <p>The Convention on International Trade in Endangered Species (CITES) regulates ivory trade to protect elephant populations.</p>
+                        <div class="info-box">
+                            <strong>Key CITES Provisions:</strong>
+                            <ul>
+                                <li>African elephants listed in Appendix I (1989) - commercial trade banned</li>
+                                <li>Pre-convention ivory (before 1976) may be legal with documentation</li>
+                                <li>Antique ivory (>100 years old) has different regulations</li>
+                                <li>All international movement requires permits</li>
+                                <li>Penalties for illegal trade include fines and imprisonment</li>
+                            </ul>
+                        </div>
+                        <div class="warning-box">
+                            <strong>⚠️ Important:</strong> Even antique ivory faces increasing restrictions. Always verify current regulations before buying, selling, or transporting ivory.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ethics-section">
+                    <h3>Local Historical Society Stewardship</h3>
+                    <div class="section-icon">🏛️</div>
+                    <div class="section-content">
+                        <p>Historical societies play a critical role in preserving ivory artifacts while respecting ethical considerations.</p>
+                        <div class="info-box">
+                            <strong>Stewardship Responsibilities:</strong>
+                            <ul>
+                                <li>Proper documentation and provenance research</li>
+                                <li>Secure storage and conservation</li>
+                                <li>Educational use vs. public display decisions</li>
+                                <li>Collaboration with source communities</li>
+                                <li>Transparent policies on acquisition and deaccession</li>
+                            </ul>
+                        </div>
+                        <div class="note">
+                            Good stewardship means acknowledging the complex history of ivory objects while using them to educate about conservation and historical injustices.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ethics-section">
+                    <h3>Repatriation Questions</h3>
+                    <div class="section-icon">🔄</div>
+                    <div class="section-content">
+                        <p>Repatriation of ivory objects raises complex questions about ownership, cultural heritage, and historical justice.</p>
+                        <div class="info-box">
+                            <strong>Key Considerations:</strong>
+                            <ul>
+                                <li>Determining rightful ownership and cultural affiliation</li>
+                                <li>Balancing conservation with community access</li>
+                                <li>Addressing colonial-era acquisitions</li>
+                                <li>Sacred or ceremonial objects require special consideration</li>
+                                <li>Building collaborative relationships with source communities</li>
+                            </ul>
+                        </div>
+                        <div class="reflection-box">
+                            <strong>Reflection Questions:</strong>
+                            <ul>
+                                <li>Who has the right to possess culturally significant objects?</li>
+                                <li>How do we address historical wrongs while preserving knowledge?</li>
+                                <li>What role should descendant communities play in decisions?</li>
+                                <li>How can institutions move from ownership to partnership?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="track-footer">
+                <button class="back-button">Explore Another Track</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
